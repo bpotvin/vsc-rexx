@@ -1,0 +1,26 @@
+{
+    "name": "rexx",
+    "displayName": "rexx",
+    "description": "rexx language support",
+    "version": "0.0.1",
+    "publisher": "me",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rexx",
+            "aliases": ["Rexx", "rexx"],
+            "extensions": [".rex"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rexx",
+            "scopeName": "source.rexx",
+            "path": "./syntaxes/rexx.tmLanguage.json"
+        }]
+    }
+}

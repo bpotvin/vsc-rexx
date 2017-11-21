@@ -1,0 +1,39 @@
+{
+    //++
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 for documentation for the tasks.json file.
+    //
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "run.rexx.exec",
+            "type": "shell",
+            "command": "rexx ${file}",
+            "args": [
+                "arg1",
+                "arg2"
+            ],
+            "windows": {
+                "command": "rexx ${file}"
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": {
+                "owner": "rexx",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    //
+                    // Error 25 running c:\code\vsc-rexx\hello.rex line 4:  Invalid subkeyword found
+                    // Error 25.12:  PARSE must be followed by one of the keywords ARG, LINEIN, PULL, SOURCE, VALUE, VAR, or VERSION; found "ARGS"
+                    //
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
