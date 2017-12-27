@@ -1,0 +1,221 @@
+
+D:\code\oculus-web-vr-main\Carmel\WebUI>git log -l 1 --since 2017-07-27 .\
+commit 8f35076fd6fc59de63042c4732e431a77307462c
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Fri Aug 4 14:14:00 2017 -0700
+
+    Make OverlayClientComponentState strongly typed
+
+    Summary:
+    Right now the state for OverlayClientComponent is "any".  This isn't great.
+
+    But we can't use a generic here as OverlaySystem needs to have a collection of OverlayClients and having a generic would break it (We would need one collection per generic type
+).
+
+    So I've kept the base class still using any.  But I've made the api that sets the state ("openOverlay") protected.  This way the derived classes have to expose their own public
+ api to set the state, which then is strongly typed.
+
+    Test Plan: Run unit tests in mocha/jest, run integration tests.
+
+    Reviewers: bpotvin, natef, brandf, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: trunkagent, #oculusbrowser
+
+    Differential Revision: https://foo.com/D5556783
+
+    Tasks: 20490852
+
+    Signature: t1:5556783:1501879181:5525bd0a738ea06e0b9feaceabd0ea0ee388f9ca
+
+commit 1699319a667f5401260e121c1245a64fda5eb71c
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Fri Aug 4 10:48:49 2017 -0700
+
+    Move rest of addressbar logic out of ContentNavUI
+
+    Summary:
+    I've added a component for the "addressbar" but there is still a bunch of logic in panel_app_nav_ui.ts that references it.
+
+    I've moved all the logic that is part of the addressbar out of ContentNavUI and into AddressBar, and added unit test coverage for all of it.
+
+    We may want to rename AddressBar to NavUIBar, but I'll do that in a future change (if we want to rename).
+
+    Test Plan: Run unit test in jest/mocha and run integration tests
+
+    Reviewers: bpotvin, jordanandersen, natef, brandf, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: trunkagent, #oculusbrowser
+
+    Differential Revision: https://foo.com/D5557233
+
+    Tasks: 20728220
+
+    Signature: t1:5557233:1501813507:e8e0d8100014737d5799f2aa1018afc8fddb5f68
+
+commit 9a965e804251c620f265f187fa807bb80b89d2fe
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Wed Aug 2 16:13:16 2017 -0700
+
+    Refactor the overlay system
+
+    Summary: I've moved all the overlay clients over to the component model.  Now we can move the overlay system itself to the component model.
+
+    Test Plan: Run unit tests in mocha and jest, run integration tests.
+
+    Reviewers: brandf, natef, bpotvin, artyom, jordanandersen, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser
+
+    Differential Revision: https://foo.com/D5549536
+
+    Tasks: 18537504
+
+    Signature: t1:5549536:1501714617:525e93c2e913738ee0ac092b643c655be15335a3
+
+commit 879007200d1d3eb2c9b4c983e601c59114bd31d3
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Wed Aug 2 09:59:42 2017 -0700
+
+    Remove non component logic from overlay system
+
+    Summary: Now that all the clients of the overlay are on the component model we don't need the code for the non-component based overlays
+
+    Test Plan: Run unit tests both in mocha and jest
+
+    Reviewers: natef, brandf, jordanandersen, artyom, bwilytsch, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser
+
+    Differential Revision: https://foo.com/D5543899
+
+    Tasks: 20598945
+
+    Signature: t1:5543899:1501649409:bda1775a697df55835ab489b3918c8115894e70d
+
+commit 0498715b3c0bbba7cf4875c4293359eb6b9f0094
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Tue Aug 1 17:16:09 2017 -0700
+
+    Move Omnibox to component model
+
+    Summary: This change moves the omnibox over to the component model.
+
+    Test Plan:
+    run unit tests in mocha/test
+    run integration tests
+    tests in browser
+
+    Reviewers: artyom, jordanandersen, bpotvin, natef, brandf, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser
+
+    Differential Revision: https://foo.com/D5517728
+
+    Tasks: 20484802
+
+    Signature: t1:5517728:1501627056:5ba3bef03cd3e5e588124fa0116a4844569f875d
+
+commit b8e37e7036bf13da647d1af8ae463b5c419d5f58
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Tue Aug 1 16:32:21 2017 -0700
+
+    Move bookmarkmanager to overlayclientcomponent
+
+    Summary: Bookmarkmanager is using the old system and is not a component. This change makes it a OverlayClientComponent
+
+    Test Plan: test in simulator, run unit tests in mocha and jest.
+
+    Reviewers: brandf, natef, jordanandersen, bpotvin, artyom, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser
+
+    Differential Revision: https://foo.com/D5541930
+
+    Tasks: 20594898
+
+    Signature: t1:5541930:1501629306:f38979a3a2ce2e4a392850bcd07921c5e2269706
+
+commit 32a237e47a71ddef4ba3522c199f76e74307f81a
+Author: Yyyyy Yyyyy <yyyyy.yyyyy@oculus.com>
+Date:   Fri Jul 28 14:56:57 2017 -0700
+
+    [Carmel][WebUI] removed public use of setState and cleaned up unused imports
+
+    Summary:
+            - some componeents were calling setState on children, they now go through public methods
+            - I didn't make state and setState protected yet because a ton of tests need to be updated
+            - I tried turnning on linting for unused variables, but there was an issue with the UI namespace.  It gave me enough info to fix the issues, but I can't leave it on unt
+il that's figured out.
+            - I renamed to didUpdateChildren for consistency with other React events (like didRender).
+
+    Test Plan: simulator
+
+    Reviewers: #oculusbrowser, jordanandersen, justrog
+
+    Reviewed By: jordanandersen, justrog
+
+    Differential Revision: https://foo.com/D5521066
+
+    Signature: t1:5521066:1501278704:43962eeb66a19507c8ec5f9bb7342bb24dc593ff
+
+commit 1b19816b9b1ae58f4e997337fcdb059b999e21ff
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Thu Jul 27 17:49:44 2017 -0700
+
+    Move the download ui to the component model
+
+    Summary: This change moves the download ui to the component model
+
+    Test Plan: Run unit tests in mocha, run unit tests in jest, run integration tests, test in browser.
+
+    Reviewers: justrog, artyom, bpotvin, natef, brandf, jordanandersen
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser, trunkagent
+
+    Differential Revision: https://foo.com/D5504173
+
+    Tasks: 20434098, 18537504
+
+    Signature: t1:5504173:1501180122:03cd09b7dc666aeb74b918d2eba1646efa788da7
+
+commit 0a7f8f7d591649598a15139e2a646be50c19d08e
+Author: Xxxxx Xxxxx <xxxxx.xxxxx@oculus.com>
+Date:   Thu Jul 27 16:50:03 2017 -0700
+
+    Hit testing broken with address bar on top after deep link to video
+
+    Summary:
+    We have a problem that when the app gets background and then foreground our overlay state can get out of sync with chromium.  For example when you download an mp4, open it in c
+inema and then go back to the browser, chromium thinks the overlay is still showing whereas the WebUI has hid it.
+
+    The fix is to have chromium notify us when we are foreground so we can sync up state.
+
+    Test Plan: Test in browser, ran unit tests.
+
+    Reviewers: bpotvin, artyom, brandf, natef, jordanandersen, justrog
+
+    Reviewed By: justrog
+
+    Subscribers: #oculusbrowser
+
+    Differential Revision: https://foo.com/D5513570
+
+    Tasks: 20462574
+
+    Signature: t1:5513570:1501199355:c2388a5751320329495e7d1f9feeab174a201962
+
+D:\code\oculus-web-vr-main\Carmel\WebUI>
