@@ -2,7 +2,8 @@
 /* trace ?r */
 
 vars. = ""
-sysin = ".\chrome-dep-list.txt"
+/*sysin = ".\chrome-dep-list.txt"*/
+sysin = "D:\code\vsc-rexx\misc\deps_list_2018-01-11.txt"
 
 files = 0
 do while lines(sysin)
@@ -21,6 +22,12 @@ process_file: procedure expose vars.
 parse arg filename
   do while lines(filename)
     line = strip(linein(filename))
+
+    if substr(line,1,5) == 'hooks' then do
+      say "HOOKS FOUND IN FILE :" filename
+      say
+    end
+
     if line == "vars = {" then do
       say "VARS FOUND IN FILE :" filename
       call process_vars filename
