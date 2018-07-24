@@ -1,7 +1,7 @@
 # vsc-rexx
-Rexx language extension for vs code.
+Rexx language support
 
-# rexx README
+# Rexx extension for Visual Studio Code
 
 This is the README for your extension "rexx". After writing up a brief description, we recommend including the following sections.
 
