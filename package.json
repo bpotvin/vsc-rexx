@@ -1,14 +1,24 @@
 {
-    "name": "rexx",
+    "name": "rexxtools",
     "displayName": "rexx",
     "description": "rexx language support",
-    "version": "0.0.1",
-    "publisher": "me",
-    "engines": {
-        "vscode": "^1.15.0"
+    "version": "0.0.3",
+    "publisher": "Bill Potvin",
+    "readme": "README.md",
+    "author": {
+        "name": "Bill Potvin"
     },
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "keywords": [
+        "Rexx"
+    ],
     "categories": [
-        "Languages"
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:rexx"
     ],
     "contributes": {
         "languages": [{
