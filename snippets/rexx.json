@@ -1,0 +1,77 @@
+{
+	"doi": {
+		"prefix": "doi",
+		"body": [
+			"do ${1:index} = ${2:0} to ${3:array.0}",
+			"\t$4",
+			"end"
+		],
+		"description": "Array indexed do loop"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ${1:condition} then",
+			"\t$2",
+			"end"
+		],
+		"description": "if statement"
+	},
+	"ifelse": {
+		"prefix": "ifelse",
+		"body": [
+			"if ${1:condition} then",
+			"\t$2",
+			"else",
+			"\t$3",
+			"end"
+		],
+		"description": "if/else statement"
+	},
+	"fileexists": {
+		"prefix": "fileexists",
+		"body": [
+			"if stream(${1}, C, \"QUERY EXISTS\") <> \"\" then do",
+			"\t$2",
+			"end"
+		],
+		"description": "if file exists"
+	},
+	"filenotexists": {
+		"prefix": "filenotexists",
+		"body": [
+			"if stream(${1}, C, \"QUERY EXISTS\") == \"\" then do",
+			"\t$2",
+			"end"
+		],
+		"description": "if file does not exist"
+	},
+	"procedure": {
+		"prefix": "procedure",
+		"body": [
+			"${1}: procedure",
+			"\t$2",
+			"end"
+		],
+		"description": "procedure"
+	},
+	"procedure_expose": {
+		"prefix": "procedure_expose",
+		"body": [
+			"${1}: procedure expose ${2}",
+			"\t$3",
+			"end"
+		],
+		"description": "procedure expose"
+	},
+	"select statement": {
+		"prefix": "select",
+		"body": [
+			"select",
+			"\twhen ${1:variable} = ${2:value} then ${3}",
+			"\totherwise ${4}",
+			"end"
+		],
+		"description": "select statement"
+	}
+}
