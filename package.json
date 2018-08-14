@@ -31,6 +31,10 @@
             "language": "rexx",
             "scopeName": "source.rexx",
             "path": "./syntaxes/rexx.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "rexx",
+            "path": "./snippets/rexx.json"
         }]
     }
 }
