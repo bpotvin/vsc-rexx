@@ -17,9 +17,6 @@
     "categories": [
         "Programming Languages"
     ],
-    "activationEvents": [
-        "onLanguage:rexx"
-    ],
     "contributes": {
         "languages": [{
             "id": "rexx",
