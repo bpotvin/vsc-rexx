@@ -9,6 +9,9 @@
 			"include": "#builtins"
 		},
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#strings-double"
 		},
 		{
@@ -34,6 +37,25 @@
 				"match": "\\b(abbrev|abs|address|arg|bitand|bitor|bitxor|b2x|center|charin|charout|chars|c2d|c2x|compare|condition|copies|datatype|date|delstr|delword|digits|d2c|d2x|errortext|form|format|fuzz|insert|lastpos|left|length|linein|lineout|lines|max|min|overlay|pos|queued|random|reverse|right|sign|sourceline|space|stream|strip|substr|subword|symbol|time|trace|translate|trunc|value|verify|word|wordindex|wordlength|wordpos|words|xrange|x2b|x2c|x2d)\\b"
 			}]
 		},		
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.rexx",
+					"begin": "/*",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.rexx"
+						}
+					},
+					"end": "*/",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.rexx"
+						}
+					}
+				}
+			]
+		},
 		"strings-double": {
 			"name": "string.quoted.double.rexx",
 			"begin": "\"",
