@@ -3,7 +3,7 @@ Rexx language support
 
 Conceived just over 40 years ago, the Rexx language evolved rapidly into an ANSI Standard language with implementations for a large number of systems around the world.
 
-SR 15,15
+SR 15,15<br>
 BR 14
 
 # Rexx language extension for Visual Studio Code
