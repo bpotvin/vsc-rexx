@@ -2,7 +2,7 @@
     "name": "rexxtools",
     "displayName": "rexx",
     "description": "rexx language support",
-    "version": "0.23.4",
+    "version": "0.23.5",
     "preview": false,
 	"icon": "rexx.png",
     "publisher": "cfsops",

@@ -1,68 +1,99 @@
 # vsc-rexx
 Rexx language support
 
-# Rexx extension for Visual Studio Code
+Conceived just over 40 years ago, the Rexx language evolved rapidly into an ANSI Standard language with implementations for a large number of systems around the world.
 
-This is the README for your extension "rexx". After writing up a brief description, we recommend including the following sections.
+SR 15,15
+BR 14
+
+# Rexx language extension for Visual Studio Code
+
+This is a Rexx language extension for Visual Studio Code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Indeed, there are features.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+[REDACTED]
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Requirements include [REDACTED]
 
-## Extension Settings
+## Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+The following settings are available:
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+[REDACTED]
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+[REDACTED]
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+[REDACTED]
 
-### 1.0.0
+### 0.23.5
 
-Initial release of ...
+Updated snippet file.
 
-### 1.0.1
+### 0.23.4
 
-Fixed issue #.
+[REDACTED]
 
-### 1.1.0
+### 0.0.3
 
-Added features X, Y, and Z.
+Initial release [REDACTED]
 
------------------------------------------------------------------------------------------------------------
+### 0.0.4
 
-## Working with Markdown
+[REDACTED]
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## Other
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+Let your 'Yes' mean 'Yes,' and your 'No' mean 'No.' Anything more is from the evil one.
+ - 
 
-### For more information
+L'enfer, c'est les autres
+ - Sartre
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Kerle, wollt ihr ewig leben?
+ - Frederick the Great, Battle of Kolín, 1757.
 
-**Enjoy!**
+Nullius in verba
+ - Horace
+
+L’audace, l’audace, toujours l’audace.
+ - G.S. Patton, Georges Danton
+
+Primum non nocere
+ - 
+
+Le roi est mort, vive le roi!
+ - 
+
+From hence, ye beauties, undeceiv'd, 
+Know, one false step is ne'er retriev'd, 
+And be with caution bold. 
+Not all that tempts your wandering eyes 
+And heedless hearts, is lawful prize; 
+Nor all, that glisters, gold.
+ - Thomas Grey
+
+... Come, my friends, 
+'T is not too late to seek a newer world. 
+Push off, and sitting well in order smite 
+The sounding furrows; for my purpose holds 
+To sail beyond the sunset, and the baths 
+Of all the western stars, until I die. 
+It may be that the gulfs will wash us down: 
+It may be we shall touch the Happy Isles, 
+And see the great Achilles, whom we knew. 
+Tho' much is taken, much abides; and tho' 
+We are not now that strength which in old days 
+Moved earth and heaven, that which we are, we are; 
+One equal temper of heroic hearts, 
+Made weak by time and fate, but strong in will 
+To strive, to seek, to find, and not to yield.
+ - Alfred, Lord Tennyson 

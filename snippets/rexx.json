@@ -1,4 +1,12 @@
 {
+    "hdr": {
+        "prefix": "hdr",
+        "body": [
+            "/*REXX*****/",
+            "/*trace ?r*/"
+        ],
+        "description": "header bits"
+    },
 	"doi": {
 		"prefix": "doi",
 		"body": [
