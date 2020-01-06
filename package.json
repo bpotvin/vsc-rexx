@@ -2,22 +2,26 @@
     "name": "rexxtools",
     "displayName": "rexx",
     "description": "rexx language support",
-    "version": "0.23.6",
+    "version": "0.23.7",
     "preview": false,
-	"icon": "rexx.png",
     "publisher": "cfsops",
+    "icon": "./images/rexx.png",
     "readme": "README.md",
     "author": {
         "name": "Bill Potvin"
     },
-    "engines": {
-        "vscode": "^1.0.0"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bpotvin/vsc-rexx.git"
     },
-    "keywords": [
-        "Rexx"
-    ],
+    "engines": {
+        "vscode": "^1.23.0"
+    },
     "categories": [
-        "Programming Languages"
+        "Languages"
+    ],
+    "keywords": [
+        "Rexx", "rexx"
     ],
     "contributes": {
         "languages": [{
@@ -28,16 +32,13 @@
         }],
         "grammars": [{
             "language": "rexx",
-            "scopeName": "source.rexx",
-            "path": "./syntaxes/rexx.tmLanguage"
+            "scopeName": "source.rex",
+            "path": "./syntaxes/rexx.tmLanguage.json"
         }],
         "snippets": [{
             "language": "rexx",
-            "path": "./snippets/rexx.json"
+            "scopeName": "source.rex",
+            "path": "./snippets/rexx.core.json"
         }]
-    },
-	"repository": {
-		"url": "https://github.com/bpotvin/vsc-rexx.git",
-		"type": "git"
-	}
+    }
 }
