@@ -34,6 +34,10 @@ The following settings are available:
 
 Thank you for installing the latest build of the vsc-rexx extension. A number of [REDACTED] are [REDACTED] so please [REDACTED]
 
+### Version 0.23.6
+
+Updated syntaxes file.
+
 ### Version 0.23.5
 
 Updated snippet file.
@@ -52,26 +56,29 @@ Initial release [REDACTED]
 
 ## Other Information
 
-Let your 'Yes' mean 'Yes,' and your 'No' mean 'No.' Anything more is from the evil one.
- - []
+Let your 'Yes' mean 'Yes,' and your 'No' mean 'No.' Anything more is from the evil one.<br>
+*[]*
 
-L'enfer, c'est les autres
- - Sartre
+Das ist nicht nur nicht richtig, es ist nicht einmal falsch!<br>
+*[]*
 
-Kerle, wollt ihr ewig leben?
- - Frederick the Great, Battle of Kolín, 1757.
+L'enfer, c'est les autres<br>
+*[Sartre]*
 
-Nullius in verba
- - Horace
+Kerle, wollt ihr ewig leben?<br>
+*[Frederick the Great, Battle of Kolín, 1757]*
 
-L’audace, l’audace, toujours l’audace.
- - G.S. Patton, Georges Danton
+Nullius in verba<br>
+*[Horace]*
 
-Primum non nocere
- - []
+L’audace, l’audace, toujours l’audace.<br>
+*[G.S. Patton (Georges Danton)]*
 
-Le roi est mort, vive le roi!
- - []
+Primum non nocere<br>
+*[]*
+
+Le roi est mort, vive le roi!<br>
+*[]*
 
 From hence, ye beauties, undeceiv'd,<br>
 Know, one false step is ne'er retriev'd,<br>
@@ -79,21 +86,27 @@ And be with caution bold. <br>
 Not all that tempts your wandering eyes <br>
 And heedless hearts, is lawful prize; <br>
 Nor all, that glisters, gold.<br>
- - Thomas Grey
+*[Thomas Grey]*
 
-... Come, my friends, <br>
-'T is not too late to seek a newer world. <br>
-Push off, and sitting well in order smite <br>
-The sounding furrows; for my purpose holds <br>
-To sail beyond the sunset, and the baths <br>
-Of all the western stars, until I die. <br>
+... Come, my friends,<br>
+'T is not too late to seek a newer world.<br>
+Push off, and sitting well in order smite<br>
+The sounding furrows; for my purpose holds<br>
+To sail beyond the sunset, and the baths<br>
+Of all the western stars, until I die.<br>
 It may be that the gulfs will wash us down:<br> 
-It may be we shall touch the Happy Isles, <br>
-And see the great Achilles, whom we knew. <br>
-Tho' much is taken, much abides; and tho' <br>
-We are not now that strength which in old days <br>
-Moved earth and heaven, that which we are, we are; <br>
-One equal temper of heroic hearts, <br> 
-Made weak by time and fate, but strong in will <br>
-To strive, to seek, to find, and not to yield. <br>
- - Alfred, Lord Tennyson 
+It may be we shall touch the Happy Isles,<br>
+And see the great Achilles, whom we knew.<br>
+Tho' much is taken, much abides; and tho'<br>
+We are not now that strength which in old days<br>
+Moved earth and heaven, that which we are, we are;<br>
+One equal temper of heroic hearts,<br> 
+Made weak by time and fate, but strong in will<br>
+To strive, to seek, to find, and not to yield.<br>
+*[Alfred, Lord Tennyson]*
+
+I'd rather be a could-be if I cannot be an are;<br>
+Because a could-be is a maybe who is reaching for a star.<br>
+I'd rather be a has-been than a might-have-been, by far;<br>
+For a might-have-been has never been, but a has was once an are.<br>
+*[Milton Berle]*
