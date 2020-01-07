@@ -34,6 +34,10 @@ The following settings are available:
 
 Thank you for installing the latest build of the vsc-rexx extension. A number of [REDACTED] are [REDACTED] so please [REDACTED]
 
+### Version 0.23.8
+
+[REDACTED]
+
 ### Version 0.23.7
 
 [REDACTED]

@@ -2,7 +2,7 @@
     "name": "rexxtools",
     "displayName": "rexx",
     "description": "rexx language support",
-    "version": "0.23.7",
+    "version": "0.23.8",
     "preview": false,
     "publisher": "cfsops",
     "icon": "./images/rexx.png",
@@ -18,27 +18,32 @@
         "vscode": "^1.23.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "keywords": [
         "Rexx", "rexx"
     ],
     "contributes": {
-        "languages": [{
+        "languages": [
+            {
             "id": "rexx",
-            "aliases": ["Rexx", "rexx"],
             "extensions": [".rex"],
             "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
+            }
+        ],
+        "grammars": [
+            {
             "language": "rexx",
             "scopeName": "source.rex",
-            "path": "./syntaxes/rexx.tmLanguage.json"
-        }],
-        "snippets": [{
+            "path": "./syntaxes/rexx.tmGrammar.json"
+            }
+        ],
+        "snippets": [
+            {
             "language": "rexx",
             "scopeName": "source.rex",
             "path": "./snippets/rexx.core.json"
-        }]
+            }
+        ]
     }
 }
